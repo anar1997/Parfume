@@ -92,7 +92,13 @@ const ParfumeDetails = ({ perfumes }) => {
               type="submit"
               className='mt-4 bg-gray-800 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded'
             >
-              Sifariş edin
+              <a href={`https://wa.me/+994504331975/?text=${encodeURIComponent(
+                `Sifariş: ${perfume.name}%0AAd: ${formData.name} Telefon: ${formData.phone} Sifariş miqdarı: ${formData.quantity}`
+              )}`}
+                target="_blank"
+                rel="noopener noreferrer">
+                Sifariş edin
+              </a>
             </button>
           </form>
         ) : (
