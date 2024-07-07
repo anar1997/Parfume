@@ -17,8 +17,17 @@ const ParfumeDetails = ({ perfumes }) => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  }
+
+    if (name === 'phone') {
+      // Ensure +994 remains at the beginning and prevent further changes
+      if (value.startsWith('+994')) {
+        const phoneNumber = value.slice(0, 5) + value.slice(5).replace(/\D/g, '').slice(0, 9);
+        setFormData({ ...formData, [name]: phoneNumber });
+      }
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
+  };
 
   const handleSubmmit = (e) => {
     e.preventDefault();
@@ -26,7 +35,7 @@ const ParfumeDetails = ({ perfumes }) => {
   }
 
   if (!perfume) {
-    return <div>Parfüm bulunamadı!</div>;
+    return <div>Ətir tapılmadı!</div>;
   }
 
   return (
@@ -60,6 +69,7 @@ const ParfumeDetails = ({ perfumes }) => {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
+                maxLength={13} // +994 + 9 digits = 13 characters
                 required
                 className="mt-1 p-2 w-full border border-gray-300 rounded-lg"
               />
