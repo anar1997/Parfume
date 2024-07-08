@@ -18,7 +18,7 @@ const Footer = () => {
 
 
   return (
-    <div className={`bg-black px-${isMobile ? '10' : '20'} py-10 flex flex-row w-full`}>
+    <div className={`bg-black px-${isMobile ? '14' : '20'} py-10 flex flex-row w-full`}>
       <div className={`text-gray-200 mr-5 w-7/12 text-left`}>
         <p>We are the best world Information Technology Company. Providing the highest quality in hardware, Software & Network solutions.</p>
         <p>Talk To Our Support</p>
