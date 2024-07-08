@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import { initialPerfumes } from '../InitialPerfumes';
 import { Input, Pagination } from 'antd';
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { RiTiktokLine } from 'react-icons/ri';
+
 
 const { Search } = Input;
 
@@ -33,6 +36,13 @@ const Content = () => {
     return (
         <div className={`min-h-screen`}>
             <div className={`my-8 px-4`}>
+                <div className={`flex mx-auto w-2/4 mb-6`}>
+                    <div className={`mx-auto flex flex-row`}>
+                        <FaWhatsapp className={`text-4xl`} />
+                        <FaInstagram className={`text-4xl mx-3`} />
+                        <RiTiktokLine className={`text-4xl`}/>
+                    </div>
+                </div>
                 <div className={`mx-auto max-w-md`}>
                     <input
                         type='text'

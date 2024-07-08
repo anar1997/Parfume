@@ -61,7 +61,7 @@ const ParfumeDetails = ({ perfumes }) => {
             </div>
             <div className={`mt-4`}>
               <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                telefon nömrəniz
+                Telefon Nömrəniz
               </label>
               <input
                 type="phone"
@@ -76,7 +76,7 @@ const ParfumeDetails = ({ perfumes }) => {
             </div>
             <div className="mt-4">
               <label htmlFor="quantity" className="block text-sm font-medium text-gray-700">
-                Sifariş miqdarı
+                Sifariş M7iqdarı
               </label>
               <input
                 type="number"
