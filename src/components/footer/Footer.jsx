@@ -1,24 +1,10 @@
-import React, { useLayoutEffect, useState } from 'react'
+import React from 'react'
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import { RiTiktokLine } from 'react-icons/ri'
 
-
 const Footer = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useLayoutEffect(() => {
-    function updateWindowWidth() {
-      setWindowWidth(window.innerWidth);
-    }
-    window.addEventListener('resize', updateWindowWidth);
-    return () => window.removeEventListener('resize', updateWindowWidth);
-  }, []);
-
-  const isMobile = windowWidth <= 500;
-
-
   return (
-    <div className={`bg-black px-${isMobile ? '14' : '20'} py-10 flex flex-row w-full`}>
+    <div className={`bg-black px-16 py-10 flex flex-row w-full`}>
       <div className={`text-gray-200 mr-5 w-7/12 text-left`}>
         <p>We are the best world Information Technology Company. Providing the highest quality in hardware, Software & Network solutions.</p>
         <p>Talk To Our Support</p>
