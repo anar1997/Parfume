@@ -4,7 +4,7 @@ import odeur from '../../images/odeur.jpeg'
 
 const Header = () => {
   return (
-    <div className={`bg-black h-32 w-full`}>
+    <div className={`bg-black h-44 w-full`}>
       <div className={`relative h-full`}>
         <img 
           src={odeur}
