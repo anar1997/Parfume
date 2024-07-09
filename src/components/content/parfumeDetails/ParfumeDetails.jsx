@@ -76,7 +76,7 @@ const ParfumeDetails = ({ perfumes }) => {
             </div>
             <div className="mt-4">
               <label htmlFor="quantity" className="block text-sm font-medium text-gray-700">
-                Sifariş M7iqdarı
+                Sifariş Miqdarı(qram ilə)
               </label>
               <input
                 type="number"

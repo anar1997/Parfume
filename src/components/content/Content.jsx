@@ -14,7 +14,7 @@ const Content = () => {
     const [perfumes, setPerfumes] = useState(initialPerfume);
     const [searchTerm, setSearchTerm] = useState('')
     const [currentPage, setCurrentPage] = useState(1);
-    const perPage = 5;
+    const perPage = 50;
 
     const handleChange = (e) => {
         setSearchTerm(e.target.value);
@@ -65,6 +65,7 @@ const Content = () => {
                         total={perfumes.length}
                         pageSize={perPage}
                         onChange={handlePageChange}
+                        showSizeChanger={false}  
                     />
                 </div>
             </div>
