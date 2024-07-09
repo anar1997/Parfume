@@ -107,7 +107,7 @@ const ParfumeDetails = ({ perfumes }) => {
               className='mt-4 bg-gray-800 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded'
             >
               <a href={`https://wa.me/+994504331975/?text=${encodeURIComponent(
-                `*Sifariş*: ${perfume.name}\n*Ad*: ${formData.name}\n*Telefon*: ${formData.phone}\n*Sifariş miqdarı*: ${formData.quantity}\n*Qeydlər*: ${formData.notes}`
+                `*Sifariş*: ${perfume.name}\n*Ad*: ${formData.name}\n*Telefon*: ${formData.phone}\n*Sifariş miqdarı*: ${formData.quantity}qram\n*Qeydlər*: ${formData.notes}`
               )}`}
                 target="_blank"
                 rel="noopener noreferrer">
