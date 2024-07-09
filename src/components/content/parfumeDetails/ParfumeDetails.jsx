@@ -11,6 +11,7 @@ const ParfumeDetails = ({ perfumes }) => {
     name: "",
     phone: "+994",
     quantity: 1,
+    notes: "",
   })
 
   const [orderPlaced, setOrderPlaced] = useState(false);
@@ -88,12 +89,25 @@ const ParfumeDetails = ({ perfumes }) => {
                 className="mt-1 p-2 w-full border border-gray-300 rounded-lg"
               />
             </div>
+            <div className={`mt-4`}>
+              <label htmlFor="notes" className="block text-sm font-medium text-gray-700">
+                Qeydlər
+              </label>
+              <textarea
+                type="text"
+                id="notes"
+                name="notes"
+                value={formData.notes}
+                onChange={handleChange}
+                className="mt-1 p-2 w-full border border-gray-300 rounded-lg"
+              />
+            </div>
             <button
               type="submit"
               className='mt-4 bg-gray-800 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded'
             >
-              <a href={`https://wa.me/+994777664444/?text=${encodeURIComponent(
-                `Sifariş: ${perfume.name}\nAd: ${formData.name}\nTelefon: ${formData.phone}\nSifariş miqdarı: ${formData.quantity}`
+              <a href={`https://wa.me/+994504331975/?text=${encodeURIComponent(
+                `Sifariş: <strong>${perfume.name}</strong>\nAd: <strong>${formData.name}</strong>\nTelefon: <strong>${formData.phone}</strong>\nSifariş miqdarı: <strong>${formData.quantity}</strong>`
               )}`}
                 target="_blank"
                 rel="noopener noreferrer">
@@ -107,6 +121,7 @@ const ParfumeDetails = ({ perfumes }) => {
             <p>Ad: {formData.name}</p>
             <p>Telefon nömrəniz: {formData.phone}</p>
             <p className='mb-4'>Sifariş miqdarı: {formData.quantity}</p>
+            <p>Qeydləriniz: {formData.notes}</p>
             <NavLink
               className='bg-gray-800 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded' to="/">Ana səhifəyə qayıt</NavLink>
           </div>
