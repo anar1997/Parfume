@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import { NavLink, useParams } from 'react-router-dom'
-import Parfume from '../../../pages/parfume/Parfume';
+
 
 const ParfumeDetails = ({ perfumes }) => {
   let { id } = useParams();
 
   const perfume = perfumes.find(p => p.id.toString() === id)
+
+  console.log(perfume.image);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -44,6 +46,7 @@ const ParfumeDetails = ({ perfumes }) => {
       <div className="my-8 px-4 mx-auto max-w-md">
         <h1 className="text-3xl font-bold">{perfume.name}</h1>
         <p className="text-gray-700">{perfume.price}</p>
+        {perfume.image && <img src={perfume.image} alt={perfume.image} className="my-4 mx-auto" />}
         {!orderPlaced ? (
           <form onSubmit={handleSubmmit}>
             <div className={`mt-4`}>
