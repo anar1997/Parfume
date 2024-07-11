@@ -47,7 +47,7 @@ const Content = () => {
             backgroundRepeat: 'no-repeat',
         }}>
             <div>
-                <img src={odeur} className='mx-auto w-1/4 h-72 rounded-3xl'/>
+                <img src={odeur} className='mx-auto w-64 h-72 rounded-3xl'/>
             </div>
             <div id='cards' className={`py-8 px-4`}>
                 <div className={`flex mx-auto w-2/4 mb-6`}>
