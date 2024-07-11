@@ -16,7 +16,15 @@
 }
 
 .perfumeNav{
-    background-color: #00383E;
+    background-color: #2FB1A6;
+}
+
+.perfumeName{
+    color: #022428;
+}
+
+.perfumePrice{
+    color: #0f1417;
 }
 
 

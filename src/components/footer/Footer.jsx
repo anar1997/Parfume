@@ -1,10 +1,12 @@
 import React from 'react'
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import { RiTiktokLine } from 'react-icons/ri'
+import style from "./style.module.css";
+
 
 const Footer = () => {
   return (
-    <div className={`bg-black px-16 py-10 flex flex-row w-full`}>
+    <div className={`bg-black px-16 py-10 flex flex-row w-full ${style.footer}`}>
       <div className={`text-gray-200 mr-5 w-7/12 text-left`}>
         <p>We are the best world Information Technology Company. Providing the highest quality in hardware, Software & Network solutions.</p>
         <p>Talk To Our Support</p>
