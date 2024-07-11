@@ -4,7 +4,7 @@ import { initialPerfumes } from '../InitialPerfumes';
 import { Input, Pagination } from 'antd';
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { RiTiktokLine } from 'react-icons/ri';
-import coverImage from "../../images/cover-11.jpg";
+import coverImage from "../../images/cover-10.avif";
 import style from "./style.module.css";
 
 
