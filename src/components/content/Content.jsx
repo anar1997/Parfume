@@ -62,7 +62,7 @@ const Content = () => {
                     />
                 </div>
                 {currentPerfumes.map((perfume) => (
-                    <NavLink key={perfume.id} to={`/${perfume.id}`} className={`${style.perfumeNav} flex flex-col items-center w-2/4 h-20 rounded-full shadow-md brightness-125 contrast-200hover:-translate-y-1 hover:cursor-pointer hover:scale-110 hover:bg-slate-900 duration-300 mb-5 mx-auto`}
+                    <NavLink key={perfume.id} to={`/${perfume.id}`} className={`${style.perfumeNav} flex flex-col items-center w-2/4 h-20 rounded-lg shadow-md brightness-125 contrast-200hover:-translate-y-1 hover:cursor-pointer hover:scale-110 hover:bg-slate-900 duration-300 mb-5 mx-auto`}
                         style={{
                             backgroundImage: `url(${coverPerfume})`,
                             backgroundSize: 'cover',
