@@ -1,0 +1,15 @@
+.coverImg {
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0/var(--tw-bg-opacity));
+    /* height: 580px; */
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+

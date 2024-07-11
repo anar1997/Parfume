@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink, useParams } from 'react-router-dom'
-
+import covImage from "../../../images/cover-1.jpg";
 
 const ParfumeDetails = ({ perfumes }) => {
   let { id } = useParams();
@@ -42,8 +42,13 @@ const ParfumeDetails = ({ perfumes }) => {
   }
 
   return (
-    <div className="min-h-screen">
-      <div className="my-8 px-4 mx-auto max-w-md">
+    <div className="min-h-screen" style={{
+      backgroundImage: `url(${covImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}>
+      <div className="py-12 px-4 mx-auto max-w-md">
         <h1 className="text-3xl font-bold">{perfume.name}</h1>
         <p className="text-gray-700">{perfume.price}</p>
         {perfume.image && <img src={perfume.image} alt={perfume.image} className="my-4 mx-auto" />}
