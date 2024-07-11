@@ -10,6 +10,11 @@
     background-position: center;
 }
 
+.pag-pagination .ant-pagination-item,
+.pag-pagination .ant-pagination-item-link {
+    color: white; /* İstediğiniz rengi buraya girin */
+}
+
 
 
 

@@ -4,8 +4,9 @@ import { initialPerfumes } from '../InitialPerfumes';
 import { Input, Pagination } from 'antd';
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { RiTiktokLine } from 'react-icons/ri';
-import coverImage from "../../images/cover-5.avif";
+import coverImage from "../../images/cover-26.avif";
 import style from "./style.module.css";
+
 
 
 const { Search } = Input;
@@ -40,14 +41,14 @@ const Content = () => {
             backgroundImage: `url(${coverImage})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
+            backgroundRepeat: 'no-repeat',
         }}>
             <div id='cards' className={`py-8 px-4`}>
                 <div className={`flex mx-auto w-2/4 mb-6`}>
                     <div className={`mx-auto flex flex-row`}>
-                        <FaWhatsapp className={`text-4xl`} />
-                        <FaInstagram className={`text-4xl mx-3`} />
-                        <RiTiktokLine className={`text-4xl`} />
+                        <FaWhatsapp className={`text-4xl text-white`} />
+                        <FaInstagram className={`text-4xl mx-3 text-white`} />
+                        <RiTiktokLine className={`text-4xl text-white`} />
                     </div>
                 </div>
                 <div className={`mx-auto max-w-md`}>
@@ -60,7 +61,7 @@ const Content = () => {
                     />
                 </div>
                 {currentPerfumes.map((perfume) => (
-                    <NavLink key={perfume.id} to={`/${perfume.id}`} className={`flex flex-col items-center w-2/4 h-20 rounded-lg shadow-md brightness-125 contrast-200hover:-translate-y-1 hover:cursor-pointer hover:scale-110 hover:bg-slate-900 duration-300  bg-teal-950 mb-5 mx-auto`}>
+                    <NavLink key={perfume.id} to={`/${perfume.id}`} className={`flex flex-col items-center w-2/4 h-20 rounded-lg shadow-md brightness-125 contrast-200hover:-translate-y-1 hover:cursor-pointer hover:scale-110 hover:bg-slate-900 duration-300  bg-emerald-800 mb-5 mx-auto`}>
                         <h2 className={`my-auto italic text-xl text-orange-300`}>{perfume.name}</h2>
                         <p className={`my-auto text-neutral-300`}>{perfume.price}</p>
                     </NavLink>
@@ -73,6 +74,7 @@ const Content = () => {
                         pageSize={perPage}
                         onChange={handlePageChange}
                         showSizeChanger={false}
+                        className="bg-slate-200 rounded-lg"
                     />
                 </div>
             </div>
