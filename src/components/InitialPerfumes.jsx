@@ -1,7 +1,5 @@
 import AmorImage from '../images/perfumes/amor_02.jpg';
 import ZəmZəm from "../images/perfumes/zəm-zəm_03.jpg";
-// import from "../images/perfumes/";
-// import from "../images/perfumes/";
 import Dunhill from "../images/perfumes/dunhill_05.jpg";
 import Bomshell from "../images/perfumes/bomshell_06.jpg";
 import Shahrizad from "../images/perfumes/Shahrizad_07.jpg";
@@ -21,9 +19,6 @@ import CocoMademoiselle from "../images/perfumes/CocoMademoiselle_20.jpg";
 import ChromeArraro from "../images/perfumes/21ChromeArraro.jpg"
 import ChanelSport from "../images/perfumes/22ChanelSport.jpg";
 import ChanelBlue from "../images/perfumes/23ChanelBlue.jpg";
-import VersageEros from "../images/perfumes/24VersageEros.jpg";
-import VersageCrystalBright from "../images/perfumes/25VersageCrystalBright.jpg";
-import VersageVersus from "../images/perfumes/26VersageVersus.jpg";
 import TomFordBlackOrchid from "../images/perfumes/27TomFordBlackOrchid.jpg";
 import TomFordTobaccoVanille from "../images/perfumes/28TomFordTobaccoVanille.jpg";
 import LeauParKenzo from "../images/perfumes/29LEauParKenzo.jpg";
@@ -74,9 +69,6 @@ import LancomeMidnight from "../images/perfumes/74LancomeMidnight.jpg";
 import LancomeLaBella from "../images/perfumes/75LancomeLaBella.jpg";
 import men212 from "../images/perfumes/76men212.jpg";
 import Ganymede from "../images/perfumes/78Ganymede.jpg";
-import AventusDelux from "../images/perfumes/79AventusDelux.jpg";
-import AventusSade from "../images/perfumes/80AventusSade.jpg";
-import AventusNoir from "../images/perfumes/81AventusNoir.jpg";
 import MoleculDelux from "../images/perfumes/82MoleculDelux.jpg";
 import MoleculSade from "../images/perfumes/83MoleculSade.jpg";
 import AccentoDelux from "../images/perfumes/84AccentoDelux.jpg";
@@ -136,11 +128,29 @@ import GucciWomanGuilty from "../images/perfumes/138GucciWomanGuilty.jpg";
 import GucciFlora from "../images/perfumes/139GucciFlora.jpg";
 import Dupont from "../images/perfumes/140Dupont.jpg";
 import AfnanTributeDelux from "../images/perfumes/141AfnanTributeDelux.jpg";
+import RojaEl from "../images/perfumes/142RojaEl.jpg";
+import Bond from "../images/perfumes/143Bond.jpg";
+import Ajmal from "../images/perfumes/144Ajmal.jpg";
+import bulgari from "../images/perfumes/145bulgari.jpg";
+import elixir from "../images/perfumes/145elixir.jpg";
+import ginza from "../images/perfumes/146ginza.jpg";
+import orza from "../images/perfumes/147orza.jpg";
+import tea from "../images/perfumes/148tea.jpg";
+import mol from "../images/perfumes/149mol.jpg";
+import roses from "../images/perfumes/150roses.jpg";
+import perfume from "../images/perfumes/151perfume.jpg";
+import lost from "../images/perfumes/152lost.jpg";
+import kayali from "../images/perfumes/153kayali.jpg";
+import bomshell from "../images/perfumes/154bombshell.jpg";
+import kajal from "../images/perfumes/155kajal.jpg";
+import heroine from "../images/perfumes/156heroine.jpg";
+import rihi from "../images/perfumes/157rihi.jpg";
+import bois from "../images/perfumes/158bois.jpg";
 
 
 
 export const initialPerfumes = [
-    { id: 1, name: "Perfume 1", price: '1 manat' },
+    { id: 1, name: "perfume 1", price: '1 manat' },
     { id: 2, name: "Amor", price: '1 manat', image: AmorImage },
     { id: 3, name: "Zəm-Zəm", price: '1 manat', image: ZəmZəm },
     { id: 4, name: "perfume 3", price: '1 manat', image: ZəmZəm },
@@ -163,13 +173,13 @@ export const initialPerfumes = [
     { id: 21, name: "Chrome Arraro", price: '1 manat', image: ChromeArraro },
     { id: 22, name: "Chanel Sport", price: '1 manat', image: ChanelSport },
     { id: 23, name: "Chanel Blue", price: '1 manat', image: ChanelBlue },
-    { id: 24, name: "Versage Eros", price: '1 manat', image: VersageEros },
-    { id: 25, name: "Versage Crystal Bright", price: '1 manat', image: VersageCrystalBright },
-    { id: 26, name: "Versage Versus", price: '1 manat', image:  VersageVersus},
+    { id: 24, name: "perfume 4", price: '1 manat', image: ChanelSport },
+    { id: 25, name: "perfume 5", price: '1 manat', image: ChanelSport },
+    { id: 26, name: "perfume 6", price: '1 manat', image:  ChanelSport},
     { id: 27, name: "Tom Ford Black Orchid", price: '1 manat', image: TomFordBlackOrchid },
     { id: 28, name: "Tom Ford Tobacco Vanille", price: '1 manat', image: TomFordTobaccoVanille },
     { id: 29, name: "L`Eau Par Kenzo", price: '1 manat', image: LeauParKenzo },
-    { id: 30, name: "perfume6", price: '1 manat', image: LeauParKenzo },
+    { id: 30, name: "perfume 7", price: '1 manat', image: LeauParKenzo },
     { id: 31, name: "One Million", price: '1 manat', image: OneMillion },
     { id: 32, name: "Lady Million", price: '1 manat', image: LadyMillion },
     { id: 33, name: "Lacoste Essential", price: '1 manat', image: LacosteEssential },
@@ -216,11 +226,11 @@ export const initialPerfumes = [
     { id: 74, name: "Lancome Midnight", price: '2 manat', image: LancomeMidnight },
     { id: 75, name: "Lancome La Bella", price: '1 manat', image: LancomeLaBella  },
     { id: 76, name: "212 men", price: '1 manat', image: men212 },
-    { id: 77, name: "Parfume", price: '1 manat', image:  men212},
+    { id: 77, name: "perfume 8", price: '1 manat', image:  men212},
     { id: 78, name: "Ganymede", price: '3 manat', image:  Ganymede},
-    { id: 79, name: "Aventus Delux", price: '4 manat', image:  AventusDelux},
-    { id: 80, name: "Aventus Sadə", price: '1.5 manat', image:  AventusSade},
-    { id: 81, name: "Aventus Noir", price: '4 manat', image: AventusNoir },
+    { id: 79, name: "perfume 9", price: '4 manat', image:  men212},
+    { id: 80, name: "perfume 10", price: '1.5 manat', image:  men212},
+    { id: 81, name: "perfume 11", price: '4 manat', image:  men212},
     { id: 82, name: "Molecul Delux", price: '4 manat', image: MoleculDelux },
     { id: 83, name: "Molecul Sadə", price: '2 manat', image: MoleculSade },
     { id: 84, name: "Accento Delux", price: '4 manat', image: AccentoDelux},
@@ -281,4 +291,22 @@ export const initialPerfumes = [
     { id: 139, name: "Gucci Flora", price: '2 manat', image: GucciFlora },
     { id: 140, name: "Dupont", price: '1 manat', image: Dupont },
     { id: 141, name: "Afnan Tribute Delux", price: '4 manat', image: AfnanTributeDelux },
+    { id: 142, name: "Roja elysium", price: '4 manat', image: RojaEl },
+    { id: 143, name: "Bond 9 Lafayette Street", price: '4 manat', image: Bond },
+    { id: 144, name: "Ajmal Sandal Wood", price: '3 manat', image: Ajmal },
+    { id: 145, name: "Dior Sauvage Elixir", price: '4 manat', image: elixir },
+    { id: 146, name: "Bulgari Empry", price: '4 manat', image: bulgari },
+    { id: 147, name: "Tiziana Terenzi Ginza", price: '4 manat', image: ginza },
+    { id: 148, name: "Tiziana Terenzi Orza", price: '4 manat', image: orza },
+    { id: 149, name: "Molecule 01+tea", price: '3 manat', image: tea },
+    { id: 150, name: "Molecule 09", price: '3 manat', image: mol },
+    { id: 151, name: "Mancera Roses Vanil", price: '3 manat', image: roses },
+    { id: 152, name: "Arabian Night", price: '3 manat', image: perfume },
+    { id: 153, name: "Tom Ford Lost Cherry", price: '1.5 manat', image: lost },
+    { id: 154, name: "Kayalı Burning Cherry", price: '2 manat', image: kayali },
+    { id: 155, name: "Vs bombshel intense", price: '1.5 manat', image: bomshell },
+    { id: 156, name: "Kajal dahab", price: '2 manat', image: kajal },
+    { id: 157, name: "Heroine", price: '2 manat', image: heroine },
+    { id: 158, name: "Rihanna rihi", price: '2 manat', image: rihi },
+    { id: 159, name: "Bois imperial", price: '4 manat', image: bois },
 ]

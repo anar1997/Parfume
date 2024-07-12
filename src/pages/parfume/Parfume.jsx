@@ -6,7 +6,7 @@ import Footer from '../../components/footer/Footer'
 const Parfume = () => {
   return (
     <div className={`min-h-screen`}>
-        {/* <Header/> */}
+        <Header/>
         <Content/>
         <Footer/>
     </div>
