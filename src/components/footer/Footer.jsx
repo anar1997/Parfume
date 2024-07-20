@@ -6,7 +6,7 @@ import style from "./style.module.css";
 const Footer = () => {
   return (
     <div className={`bg-black px-6 md:px-16 py-10 flex flex-col md:flex-row w-full ${style.footer}`}>
-      <div className={`text-gray-200 mr-5 md:mr-12 w-full md:w-7/12 md:text-left mb-4 md:mb-0`}>
+      <div className={`text-gray-200 mr-5 md:mr-12 w-full md:w-7/12 md:text-left mb-12 md:mb-0`}>
         <p className='font-bold'>Hər növ zövqə uyğun ətirlərin sifarişi və çatdırılması</p>
         <p className='italic mb-1'>Sumqayıt şəhəri</p>
         <p className='italic mb-1'>+994 55 551 31 21</p>
