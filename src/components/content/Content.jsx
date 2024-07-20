@@ -40,20 +40,20 @@ const Content = () => {
     };
 
     return (
-        <div className={`min-h-screen pt-10 ${style.mainCover}`} style={{
+        <div className={`min-h-screen ${style.mainCover}`} style={{
             // backgroundImage: `url(${coverImage})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
         }}>
-            <div id='cards' className={`py-8 px-4`}>
-                <div className={`flex mx-auto w-2/4 mb-6`}>
-                    <div className={`mx-auto flex flex-row`}>
+            <div id='cards' className={`pb-8`}>
+                <div className={`flex mx-auto w-full mb-8 ${style.socials}`}>
+                    <div className={`mx-auto flex flex-row my-6`}>
                         <a href="https://wa.me/qr/HQCLKXGTHA5NL1"  target="_blank" rel="noopener noreferrer">
-                            <FaWhatsapp className={`text-4xl text-white`} />
+                            <FaWhatsapp className={`text-4xl text-black`} />
                         </a>
-                        <FaInstagram className={`text-4xl mx-3 text-white`} />
-                        <RiTiktokLine className={`text-4xl text-white`} />
+                        <FaInstagram className={`text-4xl mx-3 text-black`} />
+                        <RiTiktokLine className={`text-4xl text-black`} />
                     </div>
                 </div>
                 <div className={`mx-auto max-w-md`}>
@@ -66,6 +66,8 @@ const Content = () => {
                     />
                 </div>
                 {currentPerfumes.map((perfume) => (
+                    <div className='mx-4'>
+
                     <NavLink key={perfume.id} to={`/${perfume.id}`} className={`${style.perfumeNav} flex flex-col items-center w-2/4 h-20 rounded-lg shadow-md brightness-125 contrast-200hover:-translate-y-1 hover:cursor-pointer hover:scale-110  duration-300 mb-5 mx-auto`}
                         style={{
                             backgroundImage: `url(${coverPerfume})`,    
@@ -77,6 +79,7 @@ const Content = () => {
                         <h2 className={`my-auto italic text-xl font-bold ${style.perfumeName}`}>{perfume.name}</h2>
                         <p className={`my-auto ${style.perfumePrice}`}>{perfume.price}</p>
                     </NavLink>
+                    </div>
                 ))}
 
                 <div className="flex justify-center mt-4">

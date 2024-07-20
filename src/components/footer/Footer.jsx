@@ -8,9 +8,11 @@ const Footer = () => {
   return (
     <div className={`bg-black px-16 py-10 flex flex-row w-full ${style.footer}`}>
       <div className={`text-gray-200 mr-5 w-7/12 text-left`}>
-        <p>We are the best world Information Technology Company. Providing the highest quality in hardware, Software & Network solutions.</p>
-        <p>Talk To Our Support</p>
-        <span>+1 002-123-4567</span>
+        <p className='font-bold'>Hər növ zövqə uyğun ətirlərin sifarişi və çatdırılması</p>
+        <p className='italic'>Sumqayıt şəhəri</p>
+        <span className='italic'>+994 55 551 31 21</span>
+        <p><a href="">Odeur.az</a></p>
+        <p className='italic'>Since 2024</p>
       </div>
       <div className={`flex flex-col w-2/4`}>
         <div className={`mb-4 mx-auto`}>

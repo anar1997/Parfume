@@ -42,8 +42,8 @@ const ParfumeDetails = ({ perfumes }) => {
   }
 
   return (
-    <div className="min-h-screen" style={{
-      backgroundImage: `url(${covImage})`,
+    <div className="min-h-screen bg-green-400" style={{
+      // backgroundImage: `url(${covImage})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'
