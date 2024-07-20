@@ -41,7 +41,7 @@ const Content = () => {
 
     return (
         <div className={`min-h-screen pt-10 ${style.mainCover}`} style={{
-            backgroundImage: `url(${coverImage})`,
+            // backgroundImage: `url(${coverImage})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
@@ -49,7 +49,9 @@ const Content = () => {
             <div id='cards' className={`py-8 px-4`}>
                 <div className={`flex mx-auto w-2/4 mb-6`}>
                     <div className={`mx-auto flex flex-row`}>
-                        <FaWhatsapp className={`text-4xl text-white`} />
+                        <a href="https://wa.me/qr/HQCLKXGTHA5NL1"  target="_blank" rel="noopener noreferrer">
+                            <FaWhatsapp className={`text-4xl text-white`} />
+                        </a>
                         <FaInstagram className={`text-4xl mx-3 text-white`} />
                         <RiTiktokLine className={`text-4xl text-white`} />
                     </div>
@@ -66,7 +68,7 @@ const Content = () => {
                 {currentPerfumes.map((perfume) => (
                     <NavLink key={perfume.id} to={`/${perfume.id}`} className={`${style.perfumeNav} flex flex-col items-center w-2/4 h-20 rounded-lg shadow-md brightness-125 contrast-200hover:-translate-y-1 hover:cursor-pointer hover:scale-110  duration-300 mb-5 mx-auto`}
                         style={{
-                            backgroundImage: `url(${coverPerfume})`,
+                            backgroundImage: `url(${coverPerfume})`,    
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             backgroundRepeat: 'no-repeat',
