@@ -14,8 +14,9 @@ const ParfumeDetails = ({ perfumes }) => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "+994",
-    quantity: 1,
+    quantity: "",
     notes: "",
+    end_price: ""
   })
 
   const [orderPlaced, setOrderPlaced] = useState(false);
@@ -29,6 +30,11 @@ const ParfumeDetails = ({ perfumes }) => {
         const phoneNumber = value.slice(0, 5) + value.slice(5).replace(/\D/g, '').slice(0, 9);
         setFormData({ ...formData, [name]: phoneNumber });
       }
+    } else if (name === 'quantity') {
+      const quantity = parseInt(value, 10);
+      const price = parseFloat(perfume.price); // Convert to float to ensure proper multiplication
+      const endPrice = quantity * price;
+      setFormData({ ...formData, quantity, end_price: endPrice.toFixed(2) });
     } else {
       setFormData({ ...formData, [name]: value });
     }
@@ -112,12 +118,23 @@ const ParfumeDetails = ({ perfumes }) => {
                 className="mt-1 p-2 w-full border border-gray-300 rounded-lg"
               />
             </div>
+            <div className={`mt-4`}>
+              <label className="block text-sm font-medium text-gray-700">Yekun Qiymət (manat ilə)</label>
+              <input
+                type="text"
+                id='end_price'
+                name='end_price'
+                value={`${formData.end_price} manat`}
+                readOnly
+                className="mt-1 p-2 w-28 border border-gray-300 rounded-lg"
+              />
+            </div>
             <button
               type="submit"
               className='mt-4 bg-gray-800 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded'
             >
               <a href={`https://wa.me/+994504331975/?text=${encodeURIComponent(
-                `*Sifariş*: ${perfume.name}\n*Ad*: ${formData.name}\n*Telefon*: ${formData.phone}\n*Sifariş miqdarı*: ${formData.quantity} qram\n*Qeydlər*: ${formData.notes}`
+                `*Sifariş*: ${perfume.name}\n*Ad*: ${formData.name}\n*Telefon*: ${formData.phone}\n*Sifariş miqdarı*: ${formData.quantity} qram\n*Qeydlər*: ${formData.notes}\n*Yekun Qiymət*: ${formData.end_price}`
               )}`}
                 target="_blank"
                 rel="noopener noreferrer">
