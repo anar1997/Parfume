@@ -56,6 +56,7 @@ const Content = () => {
                         <RiTiktokLine className={`text-4xl text-black`} />
                     </div>
                 </div>
+                <div className='mx-4'>
                 <div className={`mx-auto max-w-md`}>
                     <input
                         type='text'
@@ -64,6 +65,7 @@ const Content = () => {
                         onChange={handleChange}
                         className="p-2 w-full border border-gray-300 rounded-lg mb-4"
                     />
+                </div>
                 </div>
                 {currentPerfumes.map((perfume) => (
                     <div className='mx-4'>
