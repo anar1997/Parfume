@@ -31,7 +31,7 @@ const ParfumeDetails = ({ perfumes }) => {
         setFormData({ ...formData, [name]: phoneNumber });
       }
     } else if (name === 'quantity') {
-      const quantity = parseInt(value, 10);
+      const quantity = value;
       const price = parseFloat(perfume.price); // Convert to float to ensure proper multiplication
       const endPrice = quantity * price;
       setFormData({ ...formData, quantity, end_price: endPrice });

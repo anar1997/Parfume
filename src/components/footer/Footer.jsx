@@ -19,7 +19,9 @@ const Footer = () => {
           <p>ətirlərimizin çeşidləri haqqında daha ətraflı məlumat əldə edə bilərsiniz</p>
         </div>
         <div className={`mx-auto flex justify-center md:justify-start`}>
+        <a href="https://wa.me/qr/HQCLKXGTHA5NL1"  target="_blank" rel="noopener noreferrer">
           <FaWhatsapp className={`text-4xl text-slate-100`} />
+        </a>    
           <FaInstagram className={`text-4xl mx-3 text-slate-100`} />
           <RiTiktokLine className={`text-4xl text-slate-100`} />
         </div>
